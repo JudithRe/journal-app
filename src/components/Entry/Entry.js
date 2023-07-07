@@ -4,7 +4,7 @@ import Star from "./assets/star.js";
 
 export default function Entry({ date, motto, notes }) {
   return (
-    <article className="entry">
+    <>
       <div className="entry__date">
         <p>{date}</p>
       </div>
@@ -13,7 +13,7 @@ export default function Entry({ date, motto, notes }) {
         <FavoriteButton />
       </div>
       <p>{notes}</p>
-    </article>
+    </>
   );
 }
 
