@@ -24,10 +24,12 @@ function App() {
           </NavLink>
         </Navigation>
         <Entry
+          date="FEB, 28 JUN 2028"
           motto="Test Title"
           notes="Si sine causa? quae fuerit causa, mox videro interea hoc tenebo, si mihi. Et quidem se repellere, idque instituit docere sic omne animal, simul atque."
         />
         <Entry
+          date="FEB, 27 JUN 2028"
           motto="Test Title"
           notes="Si sine causa? quae fuerit causa, mox videro interea hoc tenebo, si mihi. Et quidem se repellere, idque instituit docere sic omne animal, simul atque."
         />

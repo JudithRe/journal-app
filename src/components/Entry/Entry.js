@@ -1,29 +1,31 @@
 import { useState } from "react";
-import FilledStar from "../../assets/star-filled";
-import Star from "../../assets/star.js";
+import FilledStar from "./assets/star-filled";
+import Star from "./assets/star.js";
 
-export default function Entry({ motto, notes }) {
+export default function Entry({ date, motto, notes }) {
   return (
     <article className="entry">
       <div className="entry__date">
-        <p>FEB 27, 2028</p>
+        <p>{date}</p>
       </div>
-      <h2>"{motto}"</h2>
-      <FavouriteButton />
+      <div className="entry__heading-container">
+        <h2 className="entry__heading">"{motto}"</h2>
+        <FavoriteButton />
+      </div>
       <p>{notes}</p>
     </article>
   );
 }
 
-function FavouriteButton() {
-  const [isFavourite, setIsFavourite] = useState(false);
+function FavoriteButton() {
+  const [isFavorite, setIsFavorite] = useState(false);
 
   return (
     <button
       className="entry__bookmark-icon"
-      onClick={() => setIsFavourite(!isFavourite)}
+      onClick={() => setIsFavorite(!isFavorite)}
     >
-      {isFavourite ? <FilledStar /> : <Star />}
+      {isFavorite ? <FilledStar /> : <Star />}
     </button>
   );
 }
