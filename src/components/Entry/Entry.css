@@ -1,0 +1,24 @@
+.entry {
+  position: relative;
+  border-bottom: 1px solid var(--light-background-colour);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.entry:last-of-type {
+  border: none;
+}
+
+.entry__bookmark-icon {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 4rem;
+}
+
+.entry__date {
+  align-self: center;
+  margin-bottom: -1rem;
+}

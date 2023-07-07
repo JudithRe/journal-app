@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.form__title {
+  text-align: center;
+}
+
+.form__input {
+  border: 1px solid var(--light-background-colour);
+  border-radius: 0.25rem;
+  color: var(--dark-background-colour);
+  padding: 1rem;
+}
+
+.form__label {
+  margin-bottom: -10px;
+}
