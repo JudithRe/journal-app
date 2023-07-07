@@ -1,0 +1,27 @@
+.navigation {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav__counter {
+  background-color: var(--light-background-colour);
+  margin-left: 0.3rem;
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+}
+
+.nav__counter--active {
+  color: var(--white-colour);
+  background-color: var(--highlight-colour);
+}
+
+.nav__link--active {
+  color: var(--highlight-colour);
+}
