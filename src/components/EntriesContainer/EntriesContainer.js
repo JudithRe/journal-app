@@ -1,11 +1,6 @@
 import Entry from "../Entry/Entry";
 
-export default function EntriesContainer({
-  entries,
-  onToggleFavorite,
-  isFavorite,
-  id,
-}) {
+export default function EntriesContainer({ entries, onToggleFavorite }) {
   return (
     <section className="entries-container">
       {entries.map((entry) => (

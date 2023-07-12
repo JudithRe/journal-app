@@ -49,13 +49,7 @@ function App() {
 
   const [filter, setFilter] = useState("all");
 
-  const [favoriteEntries, setFavoriteEntries] = useLocalStorageState(
-    "favoriteEntries",
-    {
-      defaultValue: [],
-    }
-  );
-  setFavoriteEntries(entries.filter((entry) => entry.isFavorite));
+  const favoriteEntries = entries.filter((entry) => entry.isFavorite);
 
   function handleShowFavoriteEntries() {
     setFilter("favorites");
